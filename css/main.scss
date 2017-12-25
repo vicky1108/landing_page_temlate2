@@ -1,0 +1,89 @@
+$header-color: #eff0f2;
+$o: #77efe5;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  background-color: #eff0f2;
+ weight: 100%;
+ height: 100%;
+ max-height: 800px;
+
+}
+.nav{
+  margin-top: 56px;
+    height: 100px;
+
+
+  }
+.logo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+    border-width: thick;
+    padding:5px 11px 5px  11px ;
+}
+
+mark {
+    background: #baf9f4;
+    padding: 0 3px;
+
+   }
+
+.o{
+  color: #77efe5;
+  font-size: 1.3em;
+  text-shadow: grey 1px 1px 0, grey -1px -1px 0,
+                grey -1px 1px 0, grey 1px -1px 0;
+
+}
+
+.bars{
+
+    display: inline-block;
+float: right;
+    padding: 12px;
+}
+
+.header-text{
+  margin-top: 180px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+
+   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+
+             0px 8px 13px rgba(0,0,0,0.1),
+
+             0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+
+.header-button{
+  margin-top: 130px;
+}
+
+.btnn{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+letter-spacing: 0.3em;
+  display: inline-block;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: thin;
+  border-color: grey;
+  border-radius: 2px 2px 2px 2px;
+}
+.header-img{
+  float: right;
+}

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700|Raleway:400,500" rel="stylesheet">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <script>
+    $(document).ready(function() {
+
+
+
+      $('.i1').hide();
+      $('.to1').hide();
+      $('.i2').hide();
+      $('.to2').hide();
+      $('.i3').hide();
+      $('.to3').hide();
+      $('.i4').hide();
+      $('.to4').hide();
+      $('.i5').hide();
+      $('.to5').hide();
+      $('.i6').hide();
+      $('.to6').hide();
+
+
+      $("body").css("overflow", "scroll");
+      $('.bars').click(function() {
+
+
+        $('#form').css("display", 'block');
+        $("body").css("overflow", "hidden");
+
+});
+
+$('#cancel').click(function() {
+
+  $('#form').css("display", 'none');
+
+  $("body").css("overflow", "scroll");
+
+});
+
+
+$(function() {
+  var navMain = $(".menus>li");
+  navMain.on("click", null, function() {
+    $('#form').css('display', 'none');
+    $("body").css("overflow", "scroll");
+  });
+
+
+});
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $("#form"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.hide(); // скрываем его
+		}
+	});
+
+
+
+$("a[href~='#']").click(function() {
+  $('#form').css('display', 'none');
+  $("body").css("overflow", "scroll");
+});
+
+
+      $('.foto1').hover(
+        function() {
+          $('.i1').show();
+          $('.to1').show();
+        },
+        function() {
+          $('.to1').hide();
+          $('.i1').hide();
+        });
+
+      $('.foto2').hover(
+        function() {
+          $('.i2').show();
+          $('.to2').show();
+        },
+        function() {
+          $('.to2').hide();
+          $('.i2').hide();
+        });
+
+      $('.foto3').hover(
+        function() {
+          $('.i3').show();
+          $('.to3').show();
+        },
+        function() {
+          $('.to3').hide();
+          $('.i3').hide();
+        });
+
+      $('.foto4').hover(
+        function() {
+          $('.i4').show();
+          $('.to4').show();
+        },
+        function() {
+          $('.to4').hide();
+          $('.i4').hide();
+        });
+
+      $('.foto5').hover(
+        function() {
+          $('.i5').show();
+          $('.to5').show();
+        },
+        function() {
+          $('.to5').hide();
+          $('.i5').hide();
+        });
+
+      $('.foto6').hover(
+        function() {
+          $('.i6').show();
+          $('.to6').show();
+        },
+        function() {
+          $('.to6').hide();
+          $('.i6').hide();
+        });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="nav">
+            <div class="logo">
+              <span>sh</span><span class="o">o</span><span>pno</span>
+            </div>
+            <div class="bars">
+              <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </div>
+
+
+
+            <div id="form" >
+      <div class="container">
+        <div class="row text-right">
+          <div class="closing">
+        <i class="fa fa-times" id="cancel" aria-hidden="true"></i>
+        </div>
+        </div>
+        <div class="row text-center">
+          <ul class="menus">
+            <li><a href="#two">about us</a></li>
+            <li><a href="#three">FEATURED WORKS</a></li>
+            <li><a href="#four">OUR SERVICES</a></li>
+            <li><a href="#five">SMALL TEAM</a></li>
+            <li><a href="#six">WHAT THEY SAYS</a></li>
+            <li><a href="#brands">brands</a></li>
+            <li><a href="#seven">form</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+            </div>
+
+
+
+          </div>
+          <div class="header-text text-center">
+
+            Say Hello to <mark>SHOPNO!</mark>
+            <br />
+            <mark>Agency</mark> CORPORATE SHOPNO Theme
+          </div>
+          <div class="header-button text-center">
+            <div class="btnn"><a href="#footer">
+              Contact us</a>
+            </div>
+          </div>
+          <div class="header-img">
+            <img src="img/Juice2.png" alt="juice" />
+          </div>
+          <div class="tooltip">Hover over me
+            <span class="tooltiptext">Tooltip text</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="two">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center">
+            <h1 class="title">ABOUT US</h1>
+            <h2 class="description">Lorem ipsum dolor sit amet event landing template</h2>
+          </div>
+        </div>
+        <div class="row row_two">
+          <div class="col-sm-12 col-md-6 col-lg-6  ">
+
+            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+
+                <div class="carousel-inner text-center">
+                      <div class="slider">
+                  <div class="item">
+                    <div class="grey0"></div>
+                    <div class="img_two_1"></div>
+                  </div>
+
+                  <div class="item">
+                    <div class="grey0"></div>
+                    <div class="img_two_2"></div>
+                  </div>
+
+                  <div class="active item">
+                    <div class="grey0"></div>
+                    <div class="img_two_3"></div>
+                  </div>
+
+                  <div class="item">
+                    <div class="grey0"></div>
+                    <div class="img_two_4"></div>
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+
+              <ol class="carousel-indicators">
+                <li class="carousel" data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                <li class="carousel" data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                <li class="carousel" data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                <li class="carousel" data-target="#fade-quote-carousel" data-slide-to="3"></li>
+
+              </ol>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 two-text text-left">
+
+            <p class="two_title_1">We Actually Do amazing works</p><br />
+            <p class="two_description">A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight
+              rules. The pilot must at all times.
+              <br /><br /> Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+            </p><br />
+
+            <p class="two_title_2">why we are the great?</p><br />
+            <p class="two_description">A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The preceding aircraft in approach correct sight.n</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="three">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center">
+            <h1 class="title">featured works</h1>
+            <h2 class="description">Lorem ipsum dolor sit amet event landing template</h2>
+          </div>
+        </div>
+        <div class="row_two">
+          <div class="row  text-center">
+            <div class="col-sx-12 col-sm-4 t1 img-responsive center-block">
+              <div class="img_con">
+              <div class="img_three1"></div>
+              </div>
+            </div>
+            <div class="col-sx-12 col-sm-4 t1 img-responsive center-block">
+              <div class="img_con">
+              <div class="img_three2"></div>
+              </div>
+            </div>
+            <div class="col-sx-12 col-sm-4 t1 img-responsive center-block">
+              <div class="img_con">
+              <div class="img_three3"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row    text-center">
+            <div class="col-sx-12 col-sm-4 t1 img-responsive center-block">
+              <div class="img_con">
+              <div class="img_three4"></div>
+              </div>
+            </div>
+            <div class="col-sx-12 col-sm-4 t1  img-responsive center-block">
+              <div class="img_con">
+              <div class="img_three5"></div>
+              </div>
+            </div>
+            <div class="col-sx-12 col-sm-4 t1 img-responsive center-block">
+              <div class="img_con">
+              <div class="img_three6"></div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="four">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center">
+            <h1 class="title">our services</h1>
+            <h2 class="description">Lorem ipsum dolor sit amet event landing template</h2>
+
+          </div>
+        </div>
+
+        <div class="row_two">
+          <div class="row  ">
+            <div class="col-sx-12 col-sm-7 col-lg-7 t3 ">
+              <div class="preblog1">
+                <div class="blog1">
+                  <div class="img-overlay im1">
+                    <p class="two_title_2 four_white1">why we are the great?</p><br />
+                    <p class="two_description four_white2">Our most popular service is our we know that sometimes it’s something and you middle most..</p><br />
+                    <p class="more more1">know more &rarr;</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-sx-12 col-sm-5 col-lg-5 t3 ">
+              <div class="preblog2">
+                <div class="blog2">
+                  <div class="img-overlay im1">
+                    <p class="two_title_2 four_white1">why we are the great?</p><br />
+                    <p class="two_description four_white2">Our most popular service is our we know that sometimes it’s something and you middle most..</p><br />
+                    <p class="more more2">know more &rarr;</p>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row  ">
+            <div class="col-sx-12 col-sm-7 col-lg-7 t3 ">
+              <div class="preblog3">
+                <div class="blog3">
+                  <div class="img-overlay im1">
+                    <p class="two_title_2 four_white1">why we are the great?</p><br />
+                    <p class="two_description four_white2">Our most popular service is our we know that sometimes it’s something and you middle most..</p><br />
+                    <p class="more more3">know more &rarr;</p>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+
+            <div class="col-sx-12 col-sm-5 col-lg-5 t3 ">
+              <div class="preblog4">
+                <div class="blog4">
+                  <div class="img-overlay im1">
+                    <p class="two_title_2 four_white1">why we are the great?</p><br />
+                    <p class="two_description four_white2">Our most popular service is our we know that sometimes it’s something and you middle most..</p><br />
+                    <p class="more more4">know more &rarr;</p>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row  ">
+            <div class="col-sx-12 col-sm-5 col-lg-5 t3 ">
+              <div class="preblog5">
+                <div class="blog5">
+                  <div class="img-overlay im1">
+                    <p class="two_title_2 four_white1">why we are the great?</p><br />
+                    <p class="two_description four_white2">Our most popular service is our we know that sometimes it’s something and you middle most..</p><br />
+                    <p class="more more5">know more &rarr;</p>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-sx-12 col-sm-7 col-lg-7 t3 ">
+              <div class="preblog6">
+                <div class="blog6">
+                  <div class="img-overlay im1">
+                    <p class="two_title_2 four_white1">why we are the great?</p><br />
+                    <p class="two_description four_white2">Our most popular service is our we know that sometimes it’s something and you middle most..</p><br />
+                    <p class="more more6">know more &rarr;</p>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="five">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center">
+            <h1 class="title">small team</h1>
+            <h2 class="description">Lorem ipsum dolor sit amet event landing template</h2>
+          </div>
+        </div>
+        <div class="row_two">
+          <div class="row  text-center">
+
+            <div class="col-sx-12 col-sm-4 t1">
+              <div class="foto1">
+                <div id="i" class="i1"></div>
+                <div id="too1" class="to1">
+                  <p class="tolip1 ">AL RAYHAN<span class="tolip2"><i>/ UI Designer</i></span></p>
+                  <p class="tolip3 ">Lorem Ipsum is not simply is an action designer random text It designer random text<br />
+                    <ul class="social_toolip text-left">
+                      <li><a href="#"></a><i class="fa fa-twitter " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-facebook " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-bullseye " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sx-12 col-sm-4 t1">
+              <div class="foto2">
+                <div id="i" class="i2"></div>
+                <div id="too1" class="to2">
+                  <p class="tolip1 ">AL RAYHAN<span class="tolip2"><i>/ UI Designer</i></span></p>
+                  <p class="tolip3 ">Lorem Ipsum is not simply is an action designer random text It designer random text<br />
+                    <ul class="social_toolip text-left">
+                      <li><a href="#"></a><i class="fa fa-twitter " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-facebook " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-bullseye " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sx-12 col-sm-4 t1">
+              <div class="foto3">
+                <div id="i" class="i3"></div>
+                <div id="too1" class="to3">
+                  <p class="tolip1 ">AL RAYHAN<span class="tolip2"><i>/ UI Designer</i></span></p>
+                  <p class="tolip3 ">Lorem Ipsum is not simply is an action designer random text It designer random text<br />
+                    <ul class="social_toolip text-left">
+                      <li><a href="#"></a><i class="fa fa-twitter " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-facebook " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-bullseye " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="row  text-center">
+            <div class="col-sx-12 col-sm-4 t1">
+              <div class="foto4">
+                <div id="i" class="i4"></div>
+                <div id="too1" class="to4">
+                  <p class="tolip1 ">AL RAYHAN<span class="tolip2"><i>/ UI Designer</i></span></p>
+                  <p class="tolip3 ">Lorem Ipsum is not simply is an action designer random text It designer random text<br />
+                    <ul class="social_toolip text-left">
+                      <li><a href="#"></a><i class="fa fa-twitter " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-facebook " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-bullseye " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sx-12 col-sm-4 t1">
+              <div class="foto5">
+                <div id="i" class="i5"></div>
+                <div id="too1" class="to5">
+                  <p class="tolip1 ">AL RAYHAN<span class="tolip2"><i>/ UI Designer</i></span></p>
+                  <p class="tolip3 ">Lorem Ipsum is not simply is an action designer random text It designer random text<br />
+                    <ul class="social_toolip text-left">
+                      <li><a href="#"></a><i class="fa fa-twitter " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-facebook " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-bullseye " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sx-12 col-sm-4 t1">
+              <div class="foto6">
+                <div id="i" class="i6"></div>
+                <div id="too1" class="to6">
+                  <p class="tolip1 ">AL RAYHAN<span class="tolip2"><i>/ UI Designer</i></span></p>
+                  <p class="tolip3 ">Lorem Ipsum is not simply is an action designer random text It designer random text<br />
+                    <ul class="social_toolip text-left">
+                      <li><a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-bullseye " aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div id="six">
+        <div class="container">
+
+          <div class="row">
+            <div class="title text-center">
+              <h1 class="title">what they says</h1>
+              <h2 class="description">Lorem ipsum dolor sit amet event landing template</h2>
+            </div>
+          </div>
+
+
+          <div class="row_two">
+
+            <div class="row  textu">
+
+                <div class="col-sx-12 col-sm-5 t1 says1">
+
+
+
+                            <div class="slider">
+
+                          <div class="grey1"></div>
+                          <div class="foto11"></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="col-xs-12 col-sm-7 t1 ">
+                  <div class="textu2">
+                  <div class="grey">
+                    <div class="says text-center">
+                      <p class=" s1 ">AL RAYHAN<span class="tolip2 s2"><i>/ UI Designer</i></span></p>
+                      <p class=" s3 ">Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br />
+
+                        <div class="star">
+                          <img src="img/star.png" />
+                          <img src="img/star.png" />
+                          <img src="img/star.png" />
+                          <img src="img/star.png" />
+                          <img src="img/star.png" />
+                        </div>
+
+                    </div>
+                  </div>
+                  <DIV class="row">
+                    <ul class="social2 text-center">
+                      <li><a href="#"></a><i class="fa fa-chevron-left " aria-hidden="true"></i></li>
+                      <li><a href="#"></a><i class="fa fa-chevron-right " aria-hidden="true"></i></li>
+
+
+                    </ul>
+                  </DIV>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+      </div>
+
+      <div id="brands">
+        <div class="container">
+          <div class="row">
+            <div class="row_brands">
+              <img src="img/brands.png" class="img-responsive center-block" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="seven">
+        <div class="container">
+          <div class="last">
+            <div class="row  ">
+
+              <div class="col-xs-12 col-sm-12 col-md-7 t1">
+                <div class="form">
+                  <form action="">
+                    <input name="fio" type="text" min="3" max="25" id="foc" class="text-center" placeholder="Name*" required oninvalid="this.setCustomValidity('Please, enter your name correctly. ')" oninput="setCustomValidity('')" pattern="[a-zA-Z]+" /><br
+                    />
+                    <input name="email" type="email" min="2" max="25" class="text-center" placeholder="E-mail*" required oninvalid="this.setCustomValidity('Please, enter your e-mail  correctly. ')" oninput="setCustomValidity('')" pattern="\S+@[a-z]+.[a-z]+" //><br
+                    />
+                    <input name="sub" type="text" min="3" max="25" id="sub" class="text-center" placeholder="Subject*" required oninvalid="this.setCustomValidity('Please, enter your name correctly. ')" oninput="setCustomValidity('')" pattern="[a-zA-Z]+" /><br
+                    />
+                    <textarea rows="15" placeholder="Message* "></textarea><br />
+                    <b>  <input type="submit"  value="Send message" /></b>
+
+
+                  </form>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 t1">
+                <div class="karta">
+                  <p class="map">
+                    <br /> Adress line 1 <br /> Adress line 2 <br /> Phone: +548 945645 <br /> Fax: +456456 5
+                    <br /><br /> Web: www.designagency.net<br /> E-mail: info@designagency.net
+                  </p>
+
+                  <div class="maping">
+
+                    <img id="map" src='img/map.png' />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="title text-center">
+
+                <h2 class="description white">follow us</h2><br />
+                <ul class="social text-center">
+                  <li><a href="#"></a><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></li>
+                  <li><a href="#"></a><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+                  <li><a href="#"></a><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+                  <li><a href="#"></a><i class="fa fa-bullseye fa-2x" aria-hidden="true"></i></li>
+
+                </ul>
+                <br />
+                <br />
+
+
+                <p class="two_descriptions white">Copyright Masum Parvej, All Rights Reserved</h2>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+</body>
+
+</html>
